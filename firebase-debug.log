@@ -1,0 +1,186 @@
+[debug] [2025-06-13T23:49:17.584Z] ----------------------------------------------------------------------
+[debug] [2025-06-13T23:49:17.594Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-13T23:49:17.595Z] CLI Version:   13.35.1
+[debug] [2025-06-13T23:49:17.598Z] Platform:      win32
+[debug] [2025-06-13T23:49:17.598Z] Node Version:  v18.20.8
+[debug] [2025-06-13T23:49:17.609Z] Time:          Sat Jun 14 2025 06:49:17 GMT+0700 (Western Indonesia Time)
+[debug] [2025-06-13T23:49:17.610Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-13T23:49:17.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-13T23:49:17.663Z] > authorizing via signed-in user (zaenalhabibi16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lenovo\project-bolt-sb1-4xxynusz\project
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-13T23:49:25.134Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:25.135Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:25.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-13T23:49:26.413Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-13T23:49:26.414Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project focus-8ddca (focus) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-06-13T23:49:28.190Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:28.191Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:28.191Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/focus-8ddca/billingInfo [none]
+[debug] [2025-06-13T23:49:29.539Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/focus-8ddca/billingInfo 200
+[debug] [2025-06-13T23:49:29.540Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/focus-8ddca/billingInfo {"name":"projects/focus-8ddca/billingInfo","projectId":"focus-8ddca","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-06-13T23:49:29.543Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:29.543Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:49:29.543Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/sqladmin.googleapis.com [none]
+[debug] [2025-06-13T23:49:29.544Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/sqladmin.googleapis.com x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:49:31.038Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/sqladmin.googleapis.com 200
+[debug] [2025-06-13T23:49:31.039Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\Users\Lenovo\project-bolt-sb1-4xxynusz\project 
+[info] i  Detected react app. Enabling react generated SDKs. 
+[info] i  Wrote new config to C:\Users\Lenovo\project-bolt-sb1-4xxynusz\project\dataconnect\connector/connector.yaml 
+[debug] [2025-06-13T23:49:42.306Z] defaultcredentials: writing to file C:\Users\Lenovo\AppData\Roaming\firebase\zaenalhabibi16_gmail_com_application_default_credentials.json
+[debug] [2025-06-13T23:49:42.313Z] Setting GAC to C:\Users\Lenovo\AppData\Roaming\firebase\zaenalhabibi16_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"dataconnect"},"message":"Setting GAC to C:\\Users\\Lenovo\\AppData\\Roaming\\firebase\\zaenalhabibi16_gmail_com_application_default_credentials.json"}}
+[info] I0614 06:49:43.755278   23404 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Lenovo\\project-bolt-sb1-4xxynusz\\project\\dataconnect-generated\\js\\default-connector"
+I0614 06:49:43.792608   23404 generate.go:40] Generated all sources. Writing them to disk...
+I0614 06:49:43.833970   23404 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Lenovo\\project-bolt-sb1-4xxynusz\\project\\dataconnect-generated\\js\\default-connector"
+Generated sources: react\esm\package.json [17B] react\index.cjs.js [0B] react\esm\index.esm.js [0B] angular\index.d.ts [0B] angular\package.json [661B] esm\package.json [17B] index.cjs.js [146B] package.json [1145B] README.md [2800B] react\package.json [468B] react\README.md [5443B] index.d.ts [246B] esm\index.esm.js [110B] react\index.d.ts [228B] angular\esm\package.json [17B] angular\index.cjs.js [1B] angular\esm\index.esm.js [0B] 
+I0614 06:49:43.993421   23404 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] i  Run `npm i --save @angular/fire @tanstack-query-firebase/angular @tanstack/angular-query-experimental` to install angular sdk dependencies.
+Visit https://github.com/invertase/tanstack-query-firebase/tree/main/packages/angular for more information on how to set up Angular Generated SDKs for Firebase Data Connect 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/focus-8ddca/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-06-13T23:50:02.984Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:02.984Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:02.984Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/firestore.googleapis.com [none]
+[debug] [2025-06-13T23:50:02.985Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/firestore.googleapis.com x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:50:04.361Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/firestore.googleapis.com 200
+[debug] [2025-06-13T23:50:04.363Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/firestore.googleapis.com [omitted]
+[debug] [2025-06-13T23:50:04.366Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:04.366Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:04.367Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default) [none]
+[debug] [2025-06-13T23:50:04.603Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default) 200
+[debug] [2025-06-13T23:50:04.604Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default) {"name":"projects/focus-8ddca/databases/(default)","uid":"ad39f4bb-b283-45d5-b181-249bd7a1d81d","createTime":"2025-06-13T23:44:23.914177Z","updateTime":"2025-06-13T23:44:23.914177Z","locationId":"asia-southeast2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-06-13T23:44:23.914177Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"zet","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IIbKkKTL740DMPvmtt/K740D"}
+[debug] [2025-06-13T23:50:04.604Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-06-13T23:50:04.606Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-06-13T23:50:04.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-13T23:50:04.613Z] > authorizing via signed-in user (zaenalhabibi16@gmail.com)
+[debug] [2025-06-13T23:50:04.616Z] [iam] checking project focus-8ddca for permissions ["firebase.projects.get"]
+[debug] [2025-06-13T23:50:04.622Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:04.623Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:50:04.637Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions [none]
+[debug] [2025-06-13T23:50:04.638Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:50:04.639Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-13T23:50:05.758Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions 200
+[debug] [2025-06-13T23:50:05.760Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-13T23:54:33.900Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:33.932Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:33.940Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/releases pageSize=10&pageToken=
+[debug] [2025-06-13T23:54:35.675Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/releases 200
+[debug] [2025-06-13T23:54:35.676Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/releases {"releases":[{"name":"projects/focus-8ddca/releases/cloud.firestore","rulesetName":"projects/focus-8ddca/rulesets/f08cbb38-9712-4af2-b424-82cfd929ecca","createTime":"2025-06-13T23:44:37.219576Z","updateTime":"2025-06-13T23:44:37.219576Z"}]}
+[debug] [2025-06-13T23:54:35.677Z] Found ruleset: projects/focus-8ddca/rulesets/f08cbb38-9712-4af2-b424-82cfd929ecca
+[debug] [2025-06-13T23:54:35.682Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:35.683Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:35.683Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/rulesets/f08cbb38-9712-4af2-b424-82cfd929ecca [none]
+[debug] [2025-06-13T23:54:36.304Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/rulesets/f08cbb38-9712-4af2-b424-82cfd929ecca 200
+[debug] [2025-06-13T23:54:36.305Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/focus-8ddca/rulesets/f08cbb38-9712-4af2-b424-82cfd929ecca [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-13T23:54:44.449Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:44.452Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:44.457Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:44.457Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:54:44.459Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-06-13T23:54:44.482Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-06-13T23:54:44.730Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-06-13T23:54:44.730Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/focus-8ddca/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2025-06-13T23:54:44.734Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-06-13T23:54:44.734Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/focus-8ddca/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Genkit Setup
+[debug] [2025-06-13T23:55:03.449Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-13T23:55:03.452Z] > authorizing via signed-in user (zaenalhabibi16@gmail.com)
+[debug] [2025-06-13T23:55:03.455Z] [iam] checking project focus-8ddca for permissions ["firebase.projects.get"]
+[debug] [2025-06-13T23:55:03.463Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:03.463Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:03.466Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions [none]
+[debug] [2025-06-13T23:55:03.467Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:55:03.467Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-13T23:55:04.602Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions 200
+[debug] [2025-06-13T23:55:04.603Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/focus-8ddca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-13T23:55:04.609Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:04.610Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:04.613Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:04.613Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:04.614Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-13T23:55:04.614Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:55:04.622Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-06-13T23:55:04.622Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:55:06.071Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-13T23:55:06.072Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-06-13T23:55:06.078Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:06.079Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:06.080Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-06-13T23:55:06.081Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:55:06.091Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/runtimeconfig.googleapis.com 200
+[debug] [2025-06-13T23:55:06.092Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-06-13T23:55:07.607Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-06-13T23:55:07.607Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-06-13T23:55:17.622Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:17.623Z] Checked if tokens are valid: true, expires at: 1749861571841
+[debug] [2025-06-13T23:55:17.628Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-13T23:55:17.629Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/focus-8ddca
+[debug] [2025-06-13T23:55:19.078Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-13T23:55:19.078Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/focus-8ddca/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.12.0
+ 
